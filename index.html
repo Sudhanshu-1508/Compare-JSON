@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Difference Viewer</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <h1>JSON Difference Viewer</h1>
+  
+  <div class="container">
+    <input type="file" id="jsonFile1" accept=".json" />
+    <input type="file" id="jsonFile2" accept=".json" />
+  </div>
+  
+  <button onclick="compareJson()">Compare JSON</button>
+  
+  <div id="differences"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
